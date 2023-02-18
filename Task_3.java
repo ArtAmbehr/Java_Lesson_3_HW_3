@@ -13,3 +13,8 @@ public class Task_3 {
             return buffer1;
         }
 
+        int middle = startIndex + (endIndex - startIndex) / 2;
+        int[] sorted1 = mergeSortInner(buffer1, buffer2, startIndex, middle);
+        int[] sorted2 = mergeSortInner(buffer1, buffer2, middle, endIndex);
+
+
