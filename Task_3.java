@@ -7,3 +7,9 @@ public class Task_3 {
         int[] result = mergeSortInner(buffer1, buffer2, 0, sortArr.length);
         return result;
     }
+
+    public static int[] mergeSortInner(int[] buffer1, int[] buffer2, int startIndex, int endIndex) {
+        if (startIndex >= endIndex - 1) {
+            return buffer1;
+        }
+
